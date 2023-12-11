@@ -16,7 +16,7 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 DEALINGS IN THE SOFTWARE.
 """
 import numpy as np
-from tensorflow.python.keras.layers import Dense, BatchNormalization, Dropout
+from tensorflow.keras.layers import Dense, BatchNormalization, Dropout
 from cxplain.backend.model_builders.base_model_builder import BaseModelBuilder
 
 
