@@ -17,6 +17,7 @@ DEALINGS IN THE SOFTWARE.
 """
 import numpy as np
 import collections.abc as collections
+from collections.abc import Sequence
 
 
 class Validation(object):
@@ -42,7 +43,7 @@ class Validation(object):
     @staticmethod
     def check_downsample_factors_at_initialisation(downsample_factors):
         original_downsample_factors = downsample_factors
-        if not isinstance(downsample_factors, collections.Sequence):
+        if not isinstance(downsample_factors, Sequence):
             downsample_factors = (downsample_factors,)
 
         for factor in downsample_factors:
