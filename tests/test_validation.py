@@ -21,7 +21,7 @@ import unittest
 import numpy as np
 from cxplain.util.test_util import TestUtil
 from cxplain.backend.validation import Validation
-from tensorflow.python.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 class TestValidation(unittest.TestCase):
