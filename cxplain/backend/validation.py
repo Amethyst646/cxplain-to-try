@@ -16,7 +16,7 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 DEALINGS IN THE SOFTWARE.
 """
 import numpy as np
-import collections
+import collections.abc as collections
 
 
 class Validation(object):
