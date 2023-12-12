@@ -31,7 +31,7 @@ setup(
     install_requires=[
         "six >= 1.16.0",
         "scikit-learn >= 1.3.0",
-        "numpy >= 1.14.5",
+        "numpy >= 1.26.2",
         "scipy"
     ],
     tests_require=[
@@ -40,7 +40,7 @@ setup(
     extra_packages={
         "matplotlib": ["matplotlib"],
         "tensorflow": ["tensorflow>=2.15.0"],
-        "tensorflow_gpu": ["tensorflow-gpu>=1.14.0"]
+        "tensorflow_gpu": ["tensorflow-gpu>=2.12.0"]
     },
     classifiers=[
         "License :: OSI Approved :: MIT License",
