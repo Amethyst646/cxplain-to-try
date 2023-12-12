@@ -39,7 +39,7 @@ setup(
     ],
     extra_packages={
         "matplotlib": ["matplotlib"],
-        "tensorflow": ["tensorflow>=2.15.0"],
+        "tensorflow": ["tensorflow>=1.14.0"],
         "tensorflow_gpu": ["tensorflow-gpu>=1.14.0"]
     },
     classifiers=[
