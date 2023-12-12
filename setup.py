@@ -29,7 +29,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     install_requires=[
-        "six >= 1.16.0",
+        "six >= 1.11.0",
         "scikit-learn >= 0.19.0",
         "numpy >= 1.20.0",
         "scipy"
