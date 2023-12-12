@@ -26,7 +26,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from cxplain.backend.masking.zero_masking import ZeroMasking
 from cxplain.backend.numpy_math_interface import NumpyInterface
 from cxplain.backend.masking.word_drop_masking import WordDropMasking
-from tensorflow.python.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 from cxplain.backend.causal_loss import calculate_delta_errors, causal_loss
 
 
