@@ -30,7 +30,7 @@ setup(
     long_description_content_type="text/markdown",
     install_requires=[
         "six >= 1.16.0",
-        "scikit-learn >= 1.3.0",
+        "scikit-learn >= 0.19.0",
         "numpy >= 1.23.5",
         "scipy"
     ],
