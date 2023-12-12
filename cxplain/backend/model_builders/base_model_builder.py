@@ -23,13 +23,13 @@ import tensorflow as tf
 from functools import partial
 import tensorflow.keras.backend as K
 from abc import ABCMeta, abstractmethod
-from tensorflow.python.keras.models import Model
+from tensorflow.keras.models import Model
 from cxplain.backend.validation import Validation
 from cxplain.backend.causal_loss import causal_loss
 from cxplain.backend.masking.masking_util import MaskingUtil
-from tensorflow.python.keras.backend import resize_images, resize_volumes
-from tensorflow.python.keras.callbacks import ModelCheckpoint, EarlyStopping
-from tensorflow.python.keras.layers import Input, Dense, Flatten, Lambda, Reshape
+from tensorflow.keras.backend import resize_images, resize_volumes
+from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
+from tensorflow.keras.layers import Input, Dense, Flatten, Lambda, Reshape
 
 
 @six.add_metaclass(ABCMeta)
