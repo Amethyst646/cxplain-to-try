@@ -21,7 +21,7 @@ import pickle
 import numpy as np
 from cxplain.explanation_model import CXPlain
 from cxplain.backend.validation import Validation
-from tensorflow.python.keras.losses import categorical_crossentropy
+from tensorflow.keras.losses import categorical_crossentropy
 from cxplain.backend.serialisation.tf_model_serialisation import TensorFlowModelSerialiser
 from cxplain.backend.serialisation.pickle_model_serialisation import PickleModelSerialiser
 
