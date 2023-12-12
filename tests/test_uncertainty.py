@@ -22,8 +22,8 @@ from cxplain.util.test_util import TestUtil
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble.forest import RandomForestRegressor
 from cxplain import MLPModelBuilder, ZeroMasking, CXPlain
-from tensorflow.python.keras.losses import mean_squared_error
-from tensorflow.python.keras.losses import categorical_crossentropy
+from tensorflow.keras.losses import mean_squared_error
+from tensorflow.keras.losses import categorical_crossentropy
 
 
 class TestUncertainty(unittest.TestCase):
