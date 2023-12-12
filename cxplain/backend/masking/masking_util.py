@@ -16,7 +16,8 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 DEALINGS IN THE SOFTWARE.
 """
 import itertools
-import collections
+import collections.abc as collections
+from collections.abc import Sequence
 import numpy as np
 from cxplain.backend.validation import Validation
 from cxplain.backend.numpy_math_interface import NumpyInterface
@@ -25,7 +26,7 @@ from cxplain.backend.numpy_math_interface import NumpyInterface
 class MaskingUtil(object):
     @staticmethod
     def get_input_constants(input_dim, downsample_factors):
-        if not isinstance(input_dim, collections.Sequence):
+        if not isinstance(input_dim, Sequence):
             input_dim = (input_dim,)
 
         if len(input_dim) > 1:
@@ -61,7 +62,7 @@ class MaskingUtil(object):
 
     @staticmethod
     def extract_downsample_factors(downsample_factors, expected_length):
-        if not isinstance(downsample_factors, collections.Sequence):
+        if not isinstance(downsample_factors, Sequence):
             downsample_factors = (downsample_factors,)
 
         if len(downsample_factors) == 1:
