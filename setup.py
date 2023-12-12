@@ -29,8 +29,8 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     install_requires=[
-        "six >= 1.11.0",
-        "scikit-learn >= 0.19.0",
+        "six >= 1.16.0",
+        "scikit-learn >= 1.3.0",
         "numpy >= 1.20.0",
         "scipy"
     ],
@@ -39,7 +39,7 @@ setup(
     ],
     extra_packages={
         "matplotlib": ["matplotlib"],
-        "tensorflow": ["tensorflow>=1.14.0"],
+        "tensorflow": ["tensorflow>=2.15.0"],
         "tensorflow_gpu": ["tensorflow-gpu>=1.14.0"]
     },
     classifiers=[
