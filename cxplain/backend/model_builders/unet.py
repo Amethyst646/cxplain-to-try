@@ -17,7 +17,7 @@ DEALINGS IN THE SOFTWARE.
 """
 import numpy as np
 import tensorflow.keras.backend as K
-from tensorflow.python.keras.regularizers import L1L2
+from tensorflow.keras.regularizers import L1L2
 from cxplain.backend.model_builders.base_model_builder import BaseModelBuilder
 from tensorflow.keras.layers import UpSampling2D, BatchNormalization, Dropout, Conv2D, Activation, \
     MaxPooling2D, concatenate, Reshape
