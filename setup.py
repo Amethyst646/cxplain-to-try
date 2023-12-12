@@ -31,7 +31,7 @@ setup(
     install_requires=[
         "six >= 1.16.0",
         "scikit-learn >= 1.3.0",
-        "numpy >= 1.26.2",
+        "numpy >= 1.25.2",
         "scipy"
     ],
     tests_require=[
