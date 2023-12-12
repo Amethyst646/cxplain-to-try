@@ -17,7 +17,8 @@ DEALINGS IN THE SOFTWARE.
 """
 import six
 import numpy as np
-import collections
+import collections.abc as collections
+from collections.abc import Sequence
 import tensorflow as tf
 from functools import partial
 import tensorflow.keras.backend as K
@@ -64,7 +65,7 @@ class BaseModelBuilder(object):
             raise ValueError("Attribution downsampling is not supported for variable length inputs. "
                              "Please pad your data samples to the same size to use downsampling.")
 
-        input_shape = (input_dim,) if not isinstance(input_dim, collections.Sequence) else input_dim
+        input_shape = (input_dim,) if not isinstance(input_dim, Sequence) else input_dim
         input_layer = Input(shape=input_shape)
         last_layer = self.build(input_layer)
 
